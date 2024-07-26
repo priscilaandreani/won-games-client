@@ -1,0 +1,9 @@
+!.storybook
+!.jest
+
+# Ignore artifacts:
+build
+coverage
+.next
+
+generators/templates/**
