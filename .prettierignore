@@ -1,5 +1,4 @@
 !.storybook
-!.jest
 
 # Ignore artifacts:
 build
