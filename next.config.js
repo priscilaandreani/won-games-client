@@ -5,9 +5,11 @@
  */
 const nextConfig = {
   compiler: {
-    styledComponents: true
+    styledComponents: {
+      displayName: true,
+      ssr: false
+    }
   }
-  /* config options here */
 };
 
 export default nextConfig;
