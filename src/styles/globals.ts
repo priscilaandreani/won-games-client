@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     src: url('/fonts/poppins-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
   /* poppins-regular - latin */
   @font-face {
     font-display: swap;
@@ -45,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
-  body { 
+  body {
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
