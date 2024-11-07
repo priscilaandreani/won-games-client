@@ -7,9 +7,11 @@ import { ThemeProvider } from 'styled-components';
 
 export function Providers({ children }: PropsWithChildren) {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      {children}
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        {children}
+      </ThemeProvider>
+    </>
   );
 }
