@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Button /> > should render the medium button by default 1`] = `
+<div>
+  <button
+    class="sc-braxZu hhAYUC"
+  >
+    <span>
+      Click me!
+    </span>
+  </button>
+</div>
+`;
