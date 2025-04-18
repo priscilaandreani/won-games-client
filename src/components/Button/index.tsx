@@ -6,14 +6,21 @@ export type ButtonProps = {
   $size?: 'small' | 'medium' | 'large';
   $fullWidth?: boolean;
   $icon?: ReactNode;
+  onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 const Button = ({
   children,
   $size = 'medium',
   $fullWidth = false,
-  $icon
+  $icon,
+  ...props
 }: ButtonProps) => (
-  <S.Wrapper $size={$size} $fullWidth={$fullWidth} $hasIcon={!!$icon}>
+  <S.Wrapper
+    $size={$size}
+    $fullWidth={$fullWidth}
+    $hasIcon={!!$icon}
+    {...props}
+  >
     {$icon}
     {!!children && <span>{children}</span>}
   </S.Wrapper>
