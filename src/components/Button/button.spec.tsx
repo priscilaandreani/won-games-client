@@ -29,4 +29,11 @@ describe('<Button />', () => {
       padding: '0.8rem 4.0rem'
     });
   });
+
+  it('should render a full width version', () => {
+    renderWithTheme(<Button fullWidth>Click me!</Button>);
+    expect(screen.getByRole('button', { name: /click me!/i })).toHaveStyle({
+      width: '100%'
+    });
+  });
 });
