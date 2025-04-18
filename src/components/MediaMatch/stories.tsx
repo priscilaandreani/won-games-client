@@ -4,11 +4,11 @@ import MediaMatch, { MediaMatchProps } from '.';
 export default {
   title: 'MediaMatch',
   component: MediaMatch
-} as Meta;
+} as Meta<MediaMatchProps>;
 
 export const Desktop: StoryObj<MediaMatchProps> = {
   args: {
-    greaterThan: 'medium'
+    $greaterThan: 'medium'
   },
   render: (args) => (
     <MediaMatch {...args}>
@@ -19,7 +19,7 @@ export const Desktop: StoryObj<MediaMatchProps> = {
 
 export const Mobile: StoryObj<MediaMatchProps> = {
   args: {
-    lessThan: 'medium'
+    $lessThan: 'medium'
   },
   parameters: {
     viewport: {
