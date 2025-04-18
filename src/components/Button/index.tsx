@@ -6,7 +6,7 @@ export type ButtonProps = {
   $size?: 'small' | 'medium' | 'large';
   $fullWidth?: boolean;
   $icon?: ReactNode;
-  onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 const Button = ({
   children,
