@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Button from '.';
+import Button, { ButtonProps } from '.';
 import { AddShoppingCart } from '@styled-icons/material-outlined/AddShoppingCart';
 import { ReactNode } from 'react';
 
@@ -7,7 +7,7 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
-    size: {
+    $size: {
       control: {
         type: 'inline-radio',
         options: ['small', 'medium', 'large']
@@ -16,22 +16,22 @@ export default {
     children: {
       type: 'string'
     },
-    icon: {
+    $icon: {
       type: '' as ReactNode
     }
   }
-} as Meta;
+} as Meta<ButtonProps>;
 
-export const Default: StoryObj = {
+export const Default: StoryObj<ButtonProps> = {
   args: {
     children: 'Buy now!'
   }
 };
 
-export const withIcon: StoryObj = {
+export const withIcon: StoryObj<ButtonProps> = {
   args: {
     children: 'Buy now!',
-    size: 'small',
-    icon: <AddShoppingCart />
+    $size: 'small',
+    $icon: <AddShoppingCart />
   }
 };
