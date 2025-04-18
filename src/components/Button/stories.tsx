@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Button, { ButtonProps } from '.';
 import { AddShoppingCart } from '@styled-icons/material-outlined/AddShoppingCart';
-import { ReactNode } from 'react';
 
 export default {
   title: 'Button',
@@ -17,7 +16,7 @@ export default {
       type: 'string'
     },
     $icon: {
-      type: '' as ReactNode
+      control: false
     }
   }
 } as Meta<ButtonProps>;
